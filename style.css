@@ -356,3 +356,31 @@ button:hover {
 .heroSlider img{
   min-width: 100%;
 }
+
+/* ======================= product discreption =================== */
+
+.aboutProduct{
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.productDiscreption li{
+  list-style-position: inside;
+}
+
+.productImages{
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnails img{
+  margin-top: 10px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.thumbnails{
+  display: flex;
+  gap: 10px;
+}

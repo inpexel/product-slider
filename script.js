@@ -32,3 +32,16 @@ boxes.forEach((item, i)=>{
         item.scrollLeft -= containerW;
     })
 })
+
+// =================== change image ========================
+
+const mainImage = document.querySelector('.mainImage');
+// const mainImage = document.querySelector('.productImages img');
+const thumbnails = document.querySelectorAll('.thumbnails img');
+
+thumbnails.forEach((img)=>{
+    img.addEventListener('click',()=>{
+        const link = img.src;
+        mainImage.src = link;
+    })
+})
