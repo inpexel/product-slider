@@ -45,3 +45,22 @@ thumbnails.forEach((img)=>{
         mainImage.src = link;
     })
 })
+
+const body = document.body;
+
+function myFunction() {
+    const popup = document.querySelector('.popup');
+    const close = document.querySelector('.close');
+    setTimeout(() => {
+        popup.style.display = 'flex';
+        body.style.overflow = 'hidden';
+    }, 5000);
+    console.log('done')
+    close.addEventListener('click', ()=>{
+        popup.style.display = 'none';
+        body.style.overflow = 'scroll';
+    })
+  }
+
+
+
